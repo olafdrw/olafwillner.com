@@ -867,10 +867,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -912,6 +908,11 @@ video {
 
   .md\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
