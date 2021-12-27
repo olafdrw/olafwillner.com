@@ -5,8 +5,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Inter', 'sans-serif'],
-      serif: ['FreightTextProBook', 'serif'],
+      sans: ['proxima-nova', 'sans-serif'],
+      serif: ['freight-text-pro', 'serif'],
     },
     extend: {},
   },
