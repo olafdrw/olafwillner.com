@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="/font.css">
         <link rel="stylesheet" href="https://use.typekit.net/zeg4ytd.css">
         <link rel="stylesheet" href="/tailwind.css">
+        <link rel="stylesheet" href="/site.css">
         <link rel="shortcut icon" type="image/png"
             href="/favicon-personal-website-anthracite.png" />
         <script src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -30,6 +31,20 @@
     </head>
     <body class="bg-gray-50 h-full">
         <div class="p-5 md:p-16 m-auto">
+            <!-- Mobile header -->
+            <div class="m-head">
+                <a href="/index.html" class="font-serif font-extralight
+                    text-black-900 text-3xl">olaf willner</a>
+                <details class="mnav">
+                    <summary class="font-sans text-lg">photography</summary>
+                    <nav class="mnav-panel font-sans text-lg">
+                        <a href="/index.html">about</a>
+                        <a href="/research.html">research</a>
+                        <a href="/notes.html">notes</a>
+                        <a href="/photography.html" aria-current="page">photography</a>
+                    </nav>
+                </details>
+            </div>
             <!-- Nav Menu -->
             <div class="w-full overflow-y-auto hidden md:inline-block">
                 <div class>
@@ -38,6 +53,8 @@
                             text-black-900 text-3xl">olaf willner</a>
                         <a href="/index.html" class="hover:text-gray-600
                             font-sans text-lg ml-10 float-right">about</a>
+                        <a href="/research.html" class="hover:text-gray-600
+                            font-sans text-lg ml-10 float-right">research</a>
                         <a href="/notes.html" class="hover:text-gray-600
                             font-sans text-lg ml-10 float-right">notes</a>
                         <a href="/photography.html" class="hover:text-gray-600
@@ -48,7 +65,7 @@
 
             <!-- Content -->
             <div class="container">
-                <div class="pt-24 text-left px-1 md:px-3">
+                <div class="md:pt-24 text-left px-1 md:px-3">
                     <p class="font-sans text-xs text-gray-400 italic">Leica M6 &
                         Canon AE-1,
                         Kodak Portra 400</p>

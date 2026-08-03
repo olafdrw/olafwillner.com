@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-29MFCZYB1N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-29MFCZYB1N');
+        </script>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        </style>
+        <link rel="stylesheet" href="/font.css">
+        <link rel="stylesheet" href="https://use.typekit.net/zeg4ytd.css">
+        <link rel="stylesheet" href="/tailwind.css">
+        <link rel="stylesheet" href="/site.css">
+        <link rel="shortcut icon" type="image/png"
+            href="/favicon-personal-website-anthracite.png" />
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="/script.js"></script>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <title>Olaf Willner | Research</title>
+    </head>
+    <body class="bg-gray-50 h-full">
+        <div class="flex justify-around max-w-5xl m-auto">
+            <!-- Nav Menu -->
+            <div
+                class="md:w-52 sticky inset-x-0 top-0 left-0 hidden md:block">
+                <div class="pt-14 md:pt-24 text-right">
+                    <div class="mb-10">
+                        <a href="/index.html"
+                            class="font-serif font-extralight text-black-900 text-3xl">olaf
+                            willner</a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="/index.html"
+                            class="hover:text-gray-600 font-sans text-lg">about</a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="/research.html"
+                            class="hover:text-gray-600 font-sans text-lg">research</a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="/notes.html"
+                            class="hover:text-gray-600 font-sans text-lg">notes</a>
+                    </div>
+                    <div class="mb-4">
+                        <a href="/photography.html"
+                            class="hover:text-gray-600 font-sans text-lg">photography</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6 md:p-24 max-w-3xl text-left flex-1 h-full">
+                <!-- Mobile header -->
+                <div class="m-head">
+                    <a href="/index.html"
+                        class="font-serif font-extralight text-black-900 text-3xl">olaf
+                        willner</a>
+                    <details class="mnav">
+                        <summary class="font-sans text-lg">research</summary>
+                        <nav class="mnav-panel font-sans text-lg">
+                            <a href="/index.html">about</a>
+                            <a href="/research.html" aria-current="page">research</a>
+                            <a href="/notes.html">notes</a>
+                            <a href="/photography.html">photography</a>
+                        </nav>
+                    </details>
+                </div>
+                <div>
+                    <p class="font-sans font-semibold text-4xl text-gray-900
+                        mb-5 md:mb-10 hidden md:block">Research</p>
+
+                    <div class="paper">
+                        <p class="font-serif text-lg text-gray-900 mb-1"><a
+                            href="https://ape.socialcatalystlab.org/verify"
+                            class="hover:text-gray-600 hover:underline
+                            transition-opacity">Verifying the Verifiers: Towards
+                            Autonomous Policy Evaluation</a></p>
+                        <p class="font-serif text-base text-gray-500">Olaf Willner
+                            and David Yanagizawa-Drott &middot; Working paper, July 2026</p>
+                        <p class="font-sans text-base paper-links"><a
+                            href="https://ape.socialcatalystlab.org/verify">HTML</a><span
+                            class="sep">&middot;</span><a
+                            href="https://ape.socialcatalystlab.org/cred/verifying-the-verifiers.pdf">PDF</a></p>
+                        <details class="abs">
+                            <summary class="font-sans text-base">Abstract</summary>
+                            <div class="abs-body">
+                                <p class="font-serif text-lg leading-relaxed">AI is now
+                                capable of producing policy evaluation papers, end to end,
+                                that look like real papers. But are they to be trusted? If
+                                they can be, the technology would open the door to evidence
+                                generation at unprecedented scale: cheap, rapid, and global.
+                                Checking thousands of papers by hand is infeasible, so
+                                verification itself must be automated — which raises the
+                                question of whether the verifiers can be trusted. Here, we
+                                study the reliability of automated verifiers powered by LLMs.
+                                We first develop a versioned taxonomy, the CRED codebook
+                                (Classification of Research Errors and Defects), followed by
+                                a benchmark and scoring method that quantify a verifier's
+                                ability to detect errors under that taxonomy. This lets us
+                                compare verifiers and trace the frontier between cost and
+                                detection recall over time. We find remarkable recent
+                                progress. Eighteen months ago, with the first ‘reasoning’
+                                models, detection recall was around 30% — more than two of
+                                every three errors missed. By February 2026, the best models
+                                missed one in six. In July 2026, the first model reached 99%
+                                recall (Codex 5.6 Sol), suggesting a new era for verifiers.
+                                Costs have collapsed alongside: the cheapest price of 50%
+                                recall fell roughly 90 times over the past year, and the
+                                cheapest price of 20% recall fell more than 400 times in
+                                eight months. Ensembles built largely from models with open
+                                weights prove highly cost effective. Reliability, however, is
+                                not solved: recall degrades when a paper contains multiple
+                                errors, and confidence scores remain too poorly calibrated to
+                                decide when human review is unnecessary. We conclude by
+                                discussing what is verifiable in principle and what is not.
+                                Together, our results suggest that automated verification of
+                                policy evaluation research may soon be feasible at scale,
+                                reliably and cheaply.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="paper">
+                        <p class="font-serif text-lg text-gray-900 mb-1"><a
+                            href="https://www.sciencedirect.com/science/article/abs/pii/S0265964624000171"
+                            class="hover:text-gray-600 hover:underline
+                            transition-opacity">Going to outer space with new space: The
+                            rise and consequences of evolving public-private
+                            partnerships</a></p>
+                        <p class="font-serif text-base text-gray-500">Avishai Melamed,
+                            Adi Rao, Olaf de Rohan Willner and Sarah Kreps &middot; Space
+                            Policy, vol. 68 (2024)</p>
+                        <details class="abs">
+                            <summary class="font-sans text-base">Abstract</summary>
+                            <div class="abs-body">
+                                <p class="font-serif text-lg leading-relaxed">What explains
+                                the commercialization of key government space projects
+                                through the incorporation of New Space? The newer generation
+                                of private companies have seen a significant increase in
+                                government contracting as they become instrumental for
+                                national security missions and high-profile civil projects.
+                                The turn to New Space companies, particularly those
+                                entrepreneurially-driven and privately funded, deviates from
+                                the governments' historical reliance on more traditional
+                                private partners. We argue that the turn towards New Space
+                                was neither inevitable nor monocausal, but rather the product
+                                of the confluence of the upstart sector's cost-efficient
+                                service offerings and rising public profile, which coincided
+                                with a period of renewed international competition. New Space
+                                firms indeed distinguished themselves by offering affordable
+                                products, an innovative production process, and a unique
+                                brand of prestigious reputation otherwise unavailable at
+                                national programs and older aerospace companies. However,
+                                these services were only deemed necessary for integration
+                                with the public sector because of the heightened importance
+                                of security and national status amidst a perceived return to
+                                great power competition. A new generation of public-private
+                                partnerships offered the only strategy for spacefaring states
+                                to attain and maintain a competitive position in an
+                                environment where non-state actors can match government
+                                accomplishments and capabilities. However, the utility of
+                                current integrative policy threatens to globalize not only
+                                the strengths but also the weaknesses of New Space,
+                                undercutting the very goals their adoption was meant to
+                                achieve.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

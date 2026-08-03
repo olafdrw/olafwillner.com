@@ -1,0 +1,156 @@
+/* Shared styles: mobile nav dropdown + abstract disclosures */
+
+/* --- Mobile header: wordmark left, page switcher right --- */
+.m-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .m-head { display: none; }
+}
+
+/* --- Page switcher (a <details>, not a hamburger) --- */
+/* The header sits above the full-screen panel so the toggle still closes it. */
+.m-head > a { position: relative; z-index: 60; }
+
+.mnav { position: relative; }
+
+.mnav > summary {
+    position: relative;
+    z-index: 60;
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    color: #111827;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mnav > summary::-webkit-details-marker { display: none; }
+.mnav > summary::marker { content: ""; }
+
+/* chevron */
+.mnav > summary::after {
+    content: "";
+    width: .34em;
+    height: .34em;
+    border-right: 1.25px solid currentColor;
+    border-bottom: 1.25px solid currentColor;
+    transform: translateY(-.18em) rotate(45deg);
+    transition: transform .25s ease;
+}
+
+.mnav[open] > summary::after {
+    transform: translateY(.06em) rotate(-135deg);
+}
+
+.mnav > summary:hover { color: #4b5563; }
+
+/* Full-screen menu */
+.mnav-panel {
+    position: fixed;
+    inset: 0;
+    z-index: 55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+    text-align: right;
+    background: #f9fafb;
+    animation: mnav-in .22s ease-out;
+}
+
+@keyframes mnav-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.mnav-panel a {
+    display: block;
+    padding: .7rem 0;
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: -.01em;
+    color: #111827;
+    text-decoration: none;
+}
+
+.mnav-panel a:hover { color: #4b5563; }
+
+/* current page */
+.mnav-panel a[aria-current="page"] { color: #9ca3af; }
+
+@media (prefers-reduced-motion: reduce) {
+    .mnav > summary::after { transition: none; }
+    .mnav-panel { animation: none; }
+}
+
+/* --- Research: abstract disclosure --- */
+.paper + .paper { margin-top: 3.5rem; }
+
+.paper-links {
+    margin-top: .4rem;
+    color: #6b7280;
+}
+
+.paper-links a {
+    color: #6b7280;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(17, 24, 39, .18);
+}
+
+.paper-links a:hover {
+    color: #111827;
+    border-bottom-color: currentColor;
+}
+
+.paper-links .sep {
+    margin: 0 .55rem;
+    color: #d1d5db;
+}
+
+.abs { margin-top: .85rem; }
+
+.abs > summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    color: #6b7280;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.abs > summary::-webkit-details-marker { display: none; }
+.abs > summary::marker { content: ""; }
+
+.abs > summary::after {
+    content: "";
+    width: .3em;
+    height: .3em;
+    border-right: 1.25px solid currentColor;
+    border-bottom: 1.25px solid currentColor;
+    transform: translateY(-.16em) rotate(45deg);
+    transition: transform .25s ease;
+}
+
+.abs[open] > summary::after {
+    transform: translateY(.05em) rotate(-135deg);
+}
+
+.abs > summary:hover { color: #111827; }
+
+.abs-body {
+    margin-top: .85rem;
+    padding-left: 1.1rem;
+    border-left: 1px solid rgba(17, 24, 39, .12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .abs > summary::after { transition: none; }
+}

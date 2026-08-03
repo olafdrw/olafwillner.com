@@ -15,6 +15,7 @@
         </script>
         <link rel="stylesheet" href="https://use.typekit.net/zeg4ytd.css">
         <link rel="stylesheet" href="/tailwind.css">
+        <link rel="stylesheet" href="/site.css">
         <link rel="shortcut icon" type="image/png"
             href="/favicon-personal-website-anthracite.png" />
         <script src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -37,6 +38,10 @@
                             text-lg">about</a>
                     </div>
                     <div class="mb-4">
+                        <a href="/research.html" class="hover:text-gray-600
+                            font-sans text-lg">research</a>
+                    </div>
+                    <div class="mb-4">
                         <a href="/notes.html" class="hover:text-gray-600
                             font-sans text-lg">notes</a>
                     </div>
@@ -49,19 +54,30 @@
 
             <!-- Content -->
             <div class="p-5 md:p-24 max-w-3xl text-left flex-1 h-full">
-                <a href="/index.html" class="font-serif font-extralight
-                    text-black-900 text-5xl md:text-3xl block md:hidden mb-10">olaf
-                    willner</a>
+                <!-- Mobile header -->
+                <div class="m-head">
+                    <a href="/index.html" class="font-serif font-extralight
+                        text-black-900 text-3xl">olaf willner</a>
+                    <details class="mnav">
+                        <summary class="font-sans text-lg">about</summary>
+                        <nav class="mnav-panel font-sans text-lg">
+                            <a href="/index.html" aria-current="page">about</a>
+                            <a href="/research.html">research</a>
+                            <a href="/notes.html">notes</a>
+                            <a href="/photography.html">photography</a>
+                        </nav>
+                    </details>
+                </div>
                 <div>
                     <p class="font-sans font-semibold text-4xl text-gray-900
                         mb-5 md:mb-10 hidden md:block">About me</p>
                     <p class="font-serif text-xl text-black-900">I am a Research Fellow
-                        at the <a
+                        at <a href="https://www.anthropic.com/news/the-anthropic-institute" class="hover:text-gray-600 hover:underline transition-opacity text-black-900">Anthropic</a>.<br><br>
+                        I was a Research Fellow at the <a
                             href="https://www.econ.uzh.ch/en.html"
                             class="hover:text-gray-600 hover:underline
                             transition-opacity text-black-900">University of Zürich Department of Economics</a> with <a class="hover:text-gray-600 hover:underline
-                            transition-opacity text-black-900" href="https://www.ubscenter.uzh.ch/en/research/yanagizawa-drott.html">Professor David Yanagizawa-Drott</a>. I am interested in political economy and how AI can reshape scientific discovery (check out <a href="https://ape.socialcatalystlab.org/" class="hover:text-gray-600 hover:underline transition-opacity text-black-900">APE</a> for more on this).<br><br>
-                        In August 2026, I'll be joining <a href="https://www.anthropic.com/news/the-anthropic-institute" class="hover:text-gray-600 hover:underline transition-opacity text-black-900">Anthropic</a> as a Research Fellow.<br><br>
+                            transition-opacity text-black-900" href="https://www.ubscenter.uzh.ch/en/research/yanagizawa-drott.html">Professor David Yanagizawa-Drott</a>. My work was in political economy and how AI can reshape scientific discovery (check out <a href="https://ape.socialcatalystlab.org/" class="hover:text-gray-600 hover:underline transition-opacity text-black-900">APE</a> for more on this).<br><br>
                         I graduated from <a href="https://people.as.cornell.edu/olaf-de-rohan-willner" class="hover:text-gray-600 hover:underline
                         transition-opacity text-black-900">Cornell University</a> with a dual BA in Computer and Information Science and Government, and was a fellow at the <a
                             class="hover:text-gray-600 hover:underline

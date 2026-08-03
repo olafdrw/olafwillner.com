@@ -16,10 +16,12 @@
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
         mark.highlight { background-color: #ffe27a; }
+        @media (min-width: 768px) { .nav-col { width: 16rem; } }
         </style>
         <link rel="stylesheet" href="/font.css">
         <link rel="stylesheet" href="https://use.typekit.net/zeg4ytd.css">
         <link rel="stylesheet" href="/tailwind.css">
+        <link rel="stylesheet" href="/site.css">
         <link rel="shortcut icon" type="image/png"
             href="/favicon-personal-website-anthracite.png" />
         <script src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -33,7 +35,7 @@
         <div class="flex justify-around max-w-5xl m-auto">
             <!-- Nav Menu -->
             <div
-                class="h-96 md:w-52 overflow-y-auto sticky inset-x-0 top-0 left-0 hidden md:block">
+                class="h-auto nav-col sticky inset-x-0 top-0 left-0 hidden md:block">
                 <div class="pt-14 md:pt-24 text-right">
                     <div class="mb-10">
                         <a href="/index.html"
@@ -45,6 +47,10 @@
                             class="hover:text-gray-600 font-sans text-lg">about</a>
                     </div>
                     <div class="mb-4">
+                        <a href="/research.html"
+                            class="hover:text-gray-600 font-sans text-lg">research</a>
+                    </div>
+                    <div class="mb-4">
                         <a href="/notes.html"
                             class="hover:text-gray-600 font-sans text-lg">notes</a>
                     </div>
@@ -52,17 +58,29 @@
                         <a href="/photography.html"
                             class="hover:text-gray-600 font-sans text-lg">photography</a>
                     </div>
+                    <img src="/assets/coast-at-night.jpg"
+                        alt="City lights along a dark coastline at night, seen across the water"
+                        class="w-full mt-12">
                 </div>
             </div>
 
-            <a href="/index.html"
-                class="font-serif font-extralight text-black-900 text-3xl block md:hidden ">olaf
-                willner</a>
             <!-- Content -->
             <div class="p-6 md:p-24 max-w-3xl text-left flex-1 h-full">
-                <a href="/index.html"
-                    class="font-serif font-extralight text-black-900 text-3xl block md:hidden ">olaf
-                    willner</a>
+                <!-- Mobile header -->
+                <div class="m-head">
+                    <a href="/index.html"
+                        class="font-serif font-extralight text-black-900 text-3xl">olaf
+                        willner</a>
+                    <details class="mnav">
+                        <summary class="font-sans text-lg">notes</summary>
+                        <nav class="mnav-panel font-sans text-lg">
+                            <a href="/index.html">about</a>
+                            <a href="/research.html">research</a>
+                            <a href="/notes.html" aria-current="page">notes</a>
+                            <a href="/photography.html">photography</a>
+                        </nav>
+                    </details>
+                </div>
                 <div>
                     <p class="font-serif text-lg text-gray-900 mb-1">Sensation</p>
                     <p class="font-serif text-base text-gray-500 mb-6">Arthur Rimbaud</p>
