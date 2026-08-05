@@ -97,11 +97,26 @@
                             class="hover:text-gray-600 underline
                             transition-opacity text-black-900">here</a>. <br><br>
                         Feel free to reach out at <a
-                            href="mailto:olaf.willner@econ.uzh.ch"
+                            id="contact-email"
+                            data-user="olafcwillner" data-domain="gmail.com"
+                            href="#"
                             class="hover:text-gray-600 hover:underline
-                            transition-opacity text-black-900">olaf.willner@econ.uzh.ch</a></p>
+                            transition-opacity text-black-900">(enable JavaScript to see email)</a></p>
                 </div>
             </div>
         </div>
+        <script>
+            (function () {
+                var el = document.getElementById("contact-email");
+                if (!el) return;
+                var addr = el.dataset.user + String.fromCharCode(64) + el.dataset.domain;
+                el.href = "mailto:" + addr;
+                // Show the address reversed in the DOM, flipped back with CSS so
+                // humans read it forwards but scraped text comes out backwards.
+                el.textContent = addr.split("").reverse().join("");
+                el.style.direction = "rtl";
+                el.style.unicodeBidi = "bidi-override";
+            })();
+        </script>
     </body>
 </html>
