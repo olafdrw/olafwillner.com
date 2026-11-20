@@ -155,12 +155,17 @@
     .abs > summary::after { transition: none; }
 }
 
-/* --- Research: media mentions --- */
-.media {
-    margin-top: 4.5rem;
-    padding-top: 2.5rem;
+/* --- Front page: research + media sections --- */
+.home-section { margin-top: 3.5rem; }
+
+/* rule between the sections and the rest of the about text */
+.home-section + p {
+    margin-top: 3rem;
+    padding-top: 3rem;
     border-top: 1px solid rgba(17, 24, 39, .12);
 }
+
+.home-section .paper + .paper { margin-top: 2.25rem; }
 
 .media-list {
     list-style: none;
