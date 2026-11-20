@@ -154,3 +154,18 @@
 @media (prefers-reduced-motion: reduce) {
     .abs > summary::after { transition: none; }
 }
+
+/* --- Research: media mentions --- */
+.media {
+    margin-top: 4.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(17, 24, 39, .12);
+}
+
+.media-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.media-list li + li { margin-top: 1.5rem; }
